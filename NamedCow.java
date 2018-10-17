@@ -1,7 +1,5 @@
-class NamedCow implements Animal
+class NamedCow extends Cow
 {
-     private String myType;    
-     private String mySound;
      private String myName;
      public NamedCow(String type, String sound, String name)
      {         
@@ -14,7 +12,5 @@ class NamedCow implements Animal
          mySound = "unknown";
          myName = "unknown";   
      }
-     public String getSound(){return mySound;}
-     public String getType(){return myType;}
      public String getName(){return myName;}
 }
